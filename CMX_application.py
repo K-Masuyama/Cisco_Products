@@ -4,7 +4,7 @@
 # "Class" is written to fit in each API method. (Please refer to https://msesandbox.cisco.com:8081/apidocs/)
 # In addition, each method within classes corresponds to APIs written in above web page.
 # If you have question or request, please contact me.
-# Kazuhiro Masuyama - Associate Systems Engineer - East Japan Systems Engineering 2
+# Kazuhiro Masuyama - Systems Engineer - East Japan Systems Engineering 2
 # kmasuyam@cisco.com
 # 2017/03/09
 
