@@ -16,16 +16,21 @@ def post_method(url, header, params=None):
     except requests.exceptions.RequestException as e:
         print(e)
 
+# Need To Fill
+api_key = ""
+ACCESS_TOKEN = ""
+room_id = ""
+
+
 meraki_url = "https://api.meraki.com/api/v0/networks/L_669347494617944255/cameras/Q2EV-GFCE-Y32U/snapshot"
-meraki_header = {'X-Cisco-Meraki-API-Key': "6f00a1bec9b38bfea670c6cae140ed87fdd13a6f"}
+meraki_header = {'X-Cisco-Meraki-API-Key': api_key}
 
 resp = post_method(meraki_url, meraki_header)
 
-ACCESS_TOKEN = "Yjc2NjM2MWYtODJhMC00NjlhLTllMmYtMTU1ZDRjNzQ4MDVmMDFhNWZhZDctZGE1_PF84_1eb65fdf-9643-417f-9974-ad72cae0e10f"
 accessToken_hdr = 'Bearer ' + ACCESS_TOKEN
 teams_header = {'Authorization': accessToken_hdr, 'Content-Type': 'application/json; charset=utf-8'}
 teams_url = "https://api.ciscospark.com/v1/messages"
-room_id = "Y2lzY29zcGFyazovL3VzL1JPT00vMDJlZDRiNjAtY2VlMS0xMWU5LTgyZjktZTdjM2JkNTI4ZmEz"
+
 
 params_1 = {
     "roomId" : room_id,
