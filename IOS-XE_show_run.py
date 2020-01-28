@@ -4,9 +4,10 @@
 from ncclient import manager
 from xml.dom.minidom import parseString
 
-host = "10.71.134.99"
-username = "admin"
-password = "Cisco123"
+# Need To Fill
+host = ""
+username = ""
+password = ""
 
 m = manager.connect(
     host = host,
